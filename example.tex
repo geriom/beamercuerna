@@ -1,0 +1,89 @@
+%%Beamer theme "Cuerna", version 1.0
+%%Copyright Gubertino Cavalieri (mathsguy@bluesimplex.com)
+%%October 2014. distributed under the GNU GPL Licence.
+
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage[spanish]{babel} 
+\usepackage{graphicx}
+\usepackage{comment}
+
+%%Defining the ``proposition'' environment
+\newtheorem{proposition}{Proposition} 
+
+
+%%Sets the beamer theme "Cuerna"
+\usetheme{Cuerna} 
+
+\usecolortheme{default}
+%Available color themes: default, bluesimplex, brick, lettuce
+
+%%Insert the logo
+\logo{\includegraphics[width=1.7cm]{bluesimplex.png}}
+
+%%Title
+\title{A rather long title without specific meaning}
+
+
+\author{Gubertino Cavalieri\\ %Author
+	      \texttt{mathsguy@bluesimplex.com}} %e-mail
+	      
+\date{Important Congress 2014} %Date or event
+
+\institute{Institute of Mathematics, Great University} %%Institution
+
+\begin{document}
+
+\begin{frame}
+
+  \titlepage %Creates the title page
+  
+\end{frame}
+
+
+%--------------------------------------------------------------------------
+\begin{frame}
+\tableofcontents %Prints the table of contents
+\end{frame}
+%--------------------------------------------------------------------------
+
+\section{Introduction} %%A section (Optional)
+\begin{frame}
+  \frametitle{Title of the slide}
+  \framesubtitle{Subtitle} %%Subtitle (optional)
+  Some text on top of this slide
+  
+  \[
+   \int_{0}^{\infty} \frac{5x^2}{\sqrt{a+b}}\, dx
+   \]
+
+  \begin{itemize}
+    \item[\checkmark] Fist item in the list %%
+    \item Second item
+    \item Another item
+    \item And finally, the last item
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Text in spanish} %%Shorter way of setting the slide title
+Texto adicional. No tiene un propósito en particular más que ocupar algo de espacio.
+Texto adicional. No tiene un propósito en particular más que ocupar algo de espacio.
+Texto adicional. No tiene un propósito en particular más que ocupar algo de espacio.
+Texto adicional. No tiene un propósito en particular más que ocupar algo de espacio.
+\( \sum_0^{\infty} a_i \) 
+Texto adicional. No tiene un propósito en particular más que ocupar algo de espacio.
+\end{frame}
+
+\section{Second section} %%Another section
+\begin{frame}
+    \frametitle{A theorem}
+    
+    \begin{proposition} %%The ``proposition'' environment
+        The prime numbers are cool and infinite
+    \end{proposition}
+
+    And something else
+
+\end{frame}
+\end{document}
