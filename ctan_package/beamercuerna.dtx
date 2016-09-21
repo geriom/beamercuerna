@@ -22,9 +22,36 @@
 %<*driver>
 \ProvidesFile{beamercuerna.dtx}[2016/09/18 v1.1 beamer theme cuerna]
 \documentclass{ltxdoc}
+\usepackage{listings}
 \EnableCrossrefs
 \CodelineIndex
 \RecordChanges
+
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{color}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    numberstyle=\tiny\color{codegray},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
 
 \OnlyDescription
 \begin{document}
@@ -51,10 +78,80 @@
 % \maketitle
 %
 % \section{Introduction}
-% Here I'm going to give a brief intro
-
+% This package contains a theme for \textit{Beamer}, the theme itself must be
+% referenced as \textit{Cuerna} inside beamer and has four basic colour themes.
+% It requires no additional customization but to set the theme and colour theme
+% with the usual syntax.
+% 
 % \section{Usage}
-% Here I will provide examples
+% A very basic example is presented below, it comprises the title page and a
+% single slide.
+% \begin{lstlisting}[language=TeX]
+ \documentclass{beamer}
+ \usepackage[utf8]{inputenc}
+ \usepackage[T1]{fontenc} 
+ 
+ \usetheme{Cuerna} 
+ 
+ \usecolortheme{default}
+ 
+ \logo{\includegraphics[width=1.7cm]{bluesimplex.png}}
+ 
+ \title{A rather long title without specific meaning}
+ 
+ 
+ \author{Geri Ochoa\\ 
+   \texttt{geri@bluesimplex.com}} 
+ 
+   \date{Important Congress 2016} 
+ 
+   \institute{Institute of Mathematics, Great University} 
+ 
+ \begin{document}
+ 
+   \begin{frame}
+ 
+     \titlepage 
+ 
+   \end{frame}
+ 
+   \section{Introduction} 
+   \begin{frame}
+     \frametitle{Title of the slide}
+     \framesubtitle{Subtitle}
+     Some text on top of this slide
+ 
+     \[
+       \int_{0}^{\infty} \frac{5x^2}{\sqrt{a+b}}\, dx
+     \]
+ 
+     \begin{itemize}
+       \item[\checkmark] Fist item in the list 
+       \item Second item
+       \item Another item
+       \item And finally, the last item
+     \end{itemize}
+   \end{frame}
+ 
+ \end{document}
+ \end{lstlisting}
+
+% 
+% The output depends on the parameter passed to |\usecolortheme|, there are four
+% of them  shipped with this package:
+% \includepdf[scale=0.9,pages={1,2}, nup=2x1, pagecommand=\subsection{default}]
+% {pictures/defaultexample}
+%
+% \includepdf[scale=0.9,pages={1,2}, nup=2x1,
+% pagecommand=\subsection{bluesimplex}]
+% {pictures/bluesimplexexample}
+%
+% \includepdf[scale=0.9,pages={1,2}, nup=2x1, pagecommand=\subsection{lettuce}]
+% {pictures/lettuceexample}
+%
+% \includepdf[scale=0.9,pages={1,2}, nup=2x1, pagecommand=\subsection{brick}]
+% {pictures/brickexample}
+%
 %
 % \StopEventually{}
 % \begin{macrocode}
@@ -226,7 +323,7 @@
 \mode<presentation>
 
 \definecolor{edgescolor}{HTML}{3469CC}
-\definecolor{to use in}{HTML}{282d33}
+\definecolor{squarecolor}{HTML}{282d33}
 
 %Colours to use in some elements
 \setbeamercolor*{title page header}{fg=white}
@@ -249,7 +346,7 @@
 \mode<presentation>
 
 \definecolor{edgescolor}{HTML}{3469CC}
-\definecolor{to use in}{HTML}{282d33}
+\definecolor{to use in}{HTML}{8B290E}
 
 %Colours to use in some elements
 \setbeamercolor*{title page header}{fg=white}
