@@ -10,8 +10,6 @@
 \keepsilent
 \askforoverwritefalse
 
-\usedir{tex/latex/beamercuerna}
-
 \preamble
 
 This is a generated fie
@@ -29,6 +27,7 @@ my web site: bluesimplex.com
 
 \endpreamble
 
+\usedir{tex/latex/beamercuerna}
 \generate{
   \file{beamerthemeCuerna.sty}{\from{beamercuerna.dtx}{cuerna}}
   \file{beamerinnerthemeCuerna.sty}{\from{beamercuerna.dtx}{inner}}
@@ -37,6 +36,11 @@ my web site: bluesimplex.com
   \file{beamercolorthemebluesimplex.sty}{\from{beamercuerna.dtx}{bluesimplex}}
   \file{beamercolorthemebrick.sty}{\from{beamercuerna.dtx}{brick}}
   \file{beamercolorthemelettuce.sty}{\from{beamercuerna.dtx}{lettuce}}
+}
+
+\usedir{doc/latex/template.tex}
+\generate{
+  \file{template.tex}{\from{beamercuerna.dtx}{template}}
 }
 
 \endbatchfile
