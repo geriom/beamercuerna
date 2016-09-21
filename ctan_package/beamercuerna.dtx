@@ -13,7 +13,6 @@
 % any later version. The latest version of this license is in
 % http://www.latex-project.org/lppl.txt and version 1.3 or later is part of all
 % distributions of LaTeX version 2005/12/01 or later.
-% 
 % ------------------------------------------------------------------------------
 % 
 % \fi
@@ -59,13 +58,10 @@
 %
 % \StopEventually{}
 % \begin{macrocode}
-% <*cuerna>
-% \end{macrocode}
-% Just need to figure out where this commend will appear
-% \begin{macrocode}
+%<*cuerna>
 \mode<presentation>
 
-%Paquetes requeridos
+%Required packages
 \RequirePackage{tikz}
 \RequirePackage{graphicx}
 \RequirePackage{amssymb}
@@ -73,7 +69,7 @@
 \RequirePackage{lmodern}
 \RequirePackage[absolute, overlay]{textpos}
 
-%Configuraciones
+%Color config files
 \usecolortheme{Cuerna}
 \useinnertheme{Cuerna}
 \useoutertheme{Cuerna}
@@ -83,10 +79,10 @@
 \setbeamertemplate{blocks}[rounded][shadow=true]
 
 \mode<all>
-
-% </cuerna>
-
-% <*inner>
+%</cuerna>
+%
+%
+%<*inner>
 \mode<presentation>
 
 %This draws the background
@@ -122,7 +118,7 @@
 \setbeamerfont{title}{size=\huge, shape=\mdseries}
 \setbeamerfont{institute}{size=\tiny, shape=\itshape}
 
-%%Creates the title page contents
+%Creates the title page contents
 \defbeamertemplate*{title page}{Cuerna}[1][]
 {
   \begin{textblock}{9}(0.2,2.5)
@@ -157,137 +153,143 @@
 \setbeamertemplate{sections/subsections in toc}[square]
 
 \mode<all>
-% </inner>
-
-% <*outer>
+%</inner>
+%
+%
+%<*outer>
 \mode<presentation>
 
 \setbeamerfont{sectiontitle}{size=\huge, shape=\scshape}
 
-%Barra de título
+%Title bar
 \defbeamertemplate*{frametitle}{Cuerna}[1][]
 {
   \vskip0.2cm
   \begin{beamercolorbox}[right]{sectiontitle}
-	\usebeamerfont{date}\insertsection
+    \usebeamerfont{date}\insertsection
   \end{beamercolorbox}
   \vskip-0.2cm
-    \definecolor{imred}{HTML}{BD2026}
-    \definecolor{imyellow}{HTML}{FCED27}
-    \definecolor{imorange}{HTML}{F6B419}
+  \definecolor{imred}{HTML}{BD2026}
+  \definecolor{imyellow}{HTML}{FCED27}
+  \definecolor{imorange}{HTML}{F6B419}
   \begin{beamercolorbox}[wd=\paperwidth,ht=1.9cm]{frametitle}
     \begin{tikzpicture}
       \useasboundingbox (0,0) rectangle(\the\paperwidth,1.4);
       {\node[anchor=west, white] at (0.4, 0.8){\insertlogo};}
       \fill[squarecolor](2.45, 0.3) rectangle(\paperwidth,1.4);
       \ifx\insertframesubtitle\@empty%
-       {\node[anchor=west, white, font=\large] at (3.0,0.82){\insertframetitle};}
-       \else%
-       {\node[anchor=west, white, font=\large] at (3.0, 1.02){\insertframetitle};%
-       \node[anchor=west, white, font=\small] at (3.0, 0.63){\insertframesubtitle};}%
-       \fi
-     \end{tikzpicture}
-   \end{beamercolorbox}
-   \vskip-0.5cm
+      {\node[anchor=west, white, font=\large] at (3.0,0.82){\insertframetitle};}
+      \else%
+      {\node[anchor=west, white, font=\large] at (3.0, 1.02){\insertframetitle};%
+      \node[anchor=west, white, font=\small] at (3.0, 0.63){\insertframesubtitle};}%
+      \fi
+    \end{tikzpicture}
+  \end{beamercolorbox}
+  \vskip-0.5cm
 }
 
-%%Impide que se imprima el logo
+%Prevents the logo from beign added to every slide
 \defbeamertemplate*{sidebar right}{sidebar theme}
 {%
-    \vfill%
-    \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
-    \vskip2pt}
+  \vfill%
+  \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+\vskip2pt}
 
 \mode<all>
-% </outer>
-
-% <*default>
+%</outer>
+%
+%
+%<*default>
 \mode<presentation>
 
-\definecolor{edgescolor}{HTML}{AAAAFF}
-\definecolor{squarecolor}{HTML}{7700AA}
+\definecolor{edgescolor}{HTML}{4DA6FF}
+\definecolor{squarecolor}{HTML}{002B36}
 
-%Cosas definidas por mi
+%Colours to use in some elements
 \setbeamercolor*{title page header}{fg=white}
 \setbeamercolor*{author}{fg=white}
 \setbeamercolor*{date}{fg=white}
 \setbeamercolor*{institute}{fg=white}
 \setbeamercolor*{sectiontitle}{fg=black}
 
-%Definiendo el color de los cuadritos de los items
+%Item list colour
 \setbeamercolor*{item}{fg=squarecolor}
 
-%Color de los teoremas
+%Theorem box colour
 \setbeamercolor{block title}{use=structure,fg=white,bg=squarecolor}
 
 \mode<all>
-% </default>
-
-% <*bluesimplex>
+%</default>
+%
+%
+%<*bluesimplex>
 \mode<presentation>
 
 \definecolor{edgescolor}{HTML}{3469CC}
-\definecolor{squarecolor}{HTML}{282d33}
+\definecolor{to use in}{HTML}{282d33}
 
-%Cosas definidas por mi
+%Colours to use in some elements
 \setbeamercolor*{title page header}{fg=white}
 \setbeamercolor*{author}{fg=white}
 \setbeamercolor*{date}{fg=white}
 \setbeamercolor*{institute}{fg=white}
 \setbeamercolor*{sectiontitle}{fg=black}
 
-%Color for item lists
+%Item list colour
 \setbeamercolor*{item}{fg=squarecolor}
 
-%Color of the boxes
+%Theorem box colour
 \setbeamercolor{block title}{use=structure,fg=white,bg=squarecolor}
 
 \mode<all>
-% </bluesimplex>
-
-% <*brick>
+%</bluesimplex>
+%
+%
+%<*brick>
 \mode<presentation>
 
-\definecolor{edgescolor}{HTML}{757575}
-\definecolor{squarecolor}{HTML}{AA3311}
-%\definecolor{squarecolor}{HTML}{990000}
+\definecolor{edgescolor}{HTML}{3469CC}
+\definecolor{to use in}{HTML}{282d33}
 
-%Cosas definidas por mi
+%Colours to use in some elements
 \setbeamercolor*{title page header}{fg=white}
 \setbeamercolor*{author}{fg=white}
 \setbeamercolor*{date}{fg=white}
 \setbeamercolor*{institute}{fg=white}
 \setbeamercolor*{sectiontitle}{fg=black}
 
-%Definiendo el color de los cuadritos de los items
+%Item list colour
 \setbeamercolor*{item}{fg=squarecolor}
 
-%Color de los teoremas
+%Theorem box colour
 \setbeamercolor{block title}{use=structure,fg=white,bg=squarecolor}
 
 \mode<all>
-% </brick>
-
-% <*lettuce>
+%</brick>
+%
+%
+%<*lettuce>
 \mode<presentation>
 
 \definecolor{edgescolor}{HTML}{757575}
 \definecolor{squarecolor}{HTML}{3B5323}
 
-%Cosas definidas por mi
+%Colours to use in some elements
 \setbeamercolor*{title page header}{fg=white}
 \setbeamercolor*{author}{fg=white}
 \setbeamercolor*{date}{fg=white}
 \setbeamercolor*{institute}{fg=white}
 \setbeamercolor*{sectiontitle}{fg=black}
 
-%Definiendo el color de los cuadritos de los items
+%Item list colour
 \setbeamercolor*{item}{fg=squarecolor}
 
-%Color de los teoremas
+%Theorem box colour
 \setbeamercolor{block title}{use=structure,fg=white,bg=squarecolor}
 
 \mode<all>
-% </lettuce>
+%</lettuce>
 
-% \Finale
+% \end{macrocode}
+
+%\Finale
