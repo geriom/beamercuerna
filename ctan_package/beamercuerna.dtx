@@ -205,8 +205,6 @@
     \draw[espiral] (0.71\paperwidth,0.24\paperheight) .. controls +(left:0.005\paperwidth) and (0.7\paperwidth, 0.26\paperheight) .. (0.7\paperwidth, 0.28\paperheight);
     \ifnum\thepage>1\relax%
     \fill[white, opacity=1] (0,0) rectangle(\the\paperwidth, \the\paperheight);
-    \includegraphics[width=\paperwidth, height=0.8\paperheight,
-    angle=35]{fondo.pdf}
     \fi
   \end{tikzpicture}
 }
@@ -223,7 +221,7 @@
       \usebeamerfont{title}\inserttitle\par%
     \end{beamercolorbox}
   \end{textblock}
-  \vskip4.5cm%
+  \vskip7.0cm%
   \begin{beamercolorbox}[wd=6cm,leftskip=0cm,#1]{author}
     \usebeamerfont{date}\insertauthor%
   \end{beamercolorbox}
