@@ -1,10 +1,6 @@
-%%Beamer theme "Cuerna", version 1.1
-%%Copyright Geri Ochoa (geri@bluesimplex.com)
-%%September 2016. Distributed under the GNU GPL Licence.
-
 \mode<presentation>
 
-%%This draws the background
+%This draws the background
 \setbeamertemplate{background}{
   \begin{tikzpicture}[espiral/.style={thick,color=edgescolor}]
     \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
@@ -28,7 +24,7 @@
     \ifnum\thepage>1\relax%
     \fill[white, opacity=1] (0,0) rectangle(\the\paperwidth, \the\paperheight);
     \includegraphics[width=\paperwidth, height=0.8\paperheight,
-    angle=35]{RELOC/tex/latex/beamercuerna/pictures/fondo.pdf}
+    angle=35]{fondo.pdf}
     \fi
   \end{tikzpicture}
 }
@@ -37,7 +33,7 @@
 \setbeamerfont{title}{size=\huge, shape=\mdseries}
 \setbeamerfont{institute}{size=\tiny, shape=\itshape}
 
-%%Creates the title page contents
+%Creates the title page contents
 \defbeamertemplate*{title page}{Cuerna}[1][]
 {
   \begin{textblock}{9}(0.2,2.5)
