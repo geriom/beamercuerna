@@ -137,10 +137,21 @@
  \end{lstlisting}
 
 % 
-% This is the expected output:
-% \includepdf[scale=0.9,pages={1,2}, nup=2x1, pagecommand=\subsection{blub}]
-% {pictures/presentationexample}
-
+% The output depends on the parameter passed to |\usecolortheme|, there are four
+% of them  shipped with this package:
+% \includepdf[scale=0.9,pages={1,2}, nup=2x1, pagecommand=\subsection{default}]
+% {pictures/defaultexample}
+%
+% \includepdf[scale=0.9,pages={1,2}, nup=2x1,
+% pagecommand=\subsection{bluesimplex}]
+% {pictures/bluesimplexexample}
+%
+% \includepdf[scale=0.9,pages={1,2}, nup=2x1, pagecommand=\subsection{lettuce}]
+% {pictures/lettuceexample}
+%
+% \includepdf[scale=0.9,pages={1,2}, nup=2x1, pagecommand=\subsection{brick}]
+% {pictures/brickexample}
+%
 %
 % \StopEventually{}
 % \begin{macrocode}
@@ -312,7 +323,7 @@
 \mode<presentation>
 
 \definecolor{edgescolor}{HTML}{3469CC}
-\definecolor{to use in}{HTML}{282d33}
+\definecolor{squarecolor}{HTML}{282d33}
 
 %Colours to use in some elements
 \setbeamercolor*{title page header}{fg=white}
@@ -335,7 +346,7 @@
 \mode<presentation>
 
 \definecolor{edgescolor}{HTML}{3469CC}
-\definecolor{to use in}{HTML}{282d33}
+\definecolor{to use in}{HTML}{8B290E}
 
 %Colours to use in some elements
 \setbeamercolor*{title page header}{fg=white}
