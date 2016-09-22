@@ -99,20 +99,20 @@ The output will be different depending on the parameter passed to
 
 - `default`
 
-![default](https://github.com/geriom/beamercuerna/img/default.png "Default
-Colour Theme")
+![default](https://github.com/geriom/beamercuerna/blob/master/img/default.png
+"Default Colour Theme")
 
 - `bluesimplex`
 
-![bluesimplex](https://github.com/geriom/beamercuerna/img/bluesimplex.png
+![bluesimplex](https://github.com/geriom/beamercuerna/blob/master/img/bluesimplex.png
 "Bluesimplex Colour Theme")
 
 - `lettuce`
 
-![lettuce](https://github.com/geriom/beamercuerna/img/lettuce.png "Lettuce
-Colour Theme")
+![lettuce](https://github.com/geriom/beamercuerna/blob/master/img/lettuce.png
+"Lettuce Colour Theme")
 
 - `brick`
 
-![brick](https://github.com/geriom/beamercuerna/img/default.png "Brick Colour
-Theme")
+![brick](https://github.com/geriom/beamercuerna/blob/master/img/default.png
+"Brick Colour Theme")
