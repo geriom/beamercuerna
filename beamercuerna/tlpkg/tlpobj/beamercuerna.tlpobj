@@ -1,0 +1,26 @@
+name beamercuerna
+category Package
+revision 2
+shortdesc Cuerna beamer theme
+relocated 1
+longdesc Cuerna Bamer theme includes four colour themes: default, bluesimplex,
+longdesc lettuce and brick
+docfiles size=1
+ RELOC/doc/latex/beamercuerna/README
+ RELOC/doc/latex/beamercuerna/beamercuerna.pdf
+ RELOC/doc/latex/beamercuerna/pictures/bluesimplex.png
+ RELOC/doc/latex/beamercuerna/template.tex
+runfiles size=1
+ RELOC/tex/latex/beamercuerna/beamercolorthemebluesimplex.sty
+ RELOC/tex/latex/beamercuerna/beamercolorthemebrick.sty 
+ RELOC/tex/latex/beamercuerna/beamercolorthemeCuerna.sty
+ RELOC/tex/latex/beamercuerna/beamercolorthemelettuce.sty
+ RELOC/tex/latex/beamercuerna/beamerinnerthemeCuerna.sty
+ RELOC/tex/latex/beamercuerna/beamerouterthemeCuerna.sty
+ RELOC/tex/latex/beamercuerna/beamerthemeCuerna.sty
+srcfiles size=1
+ RELOC/source/latex/beamercuerna/beamercuerna.ins
+ RELOC/source/latex/beamercuerna/beamercuerna.dtx
+catalogue-license lppl1.3c
+catalogue-topics decoration maths presentation
+catalogue-version 1.1
