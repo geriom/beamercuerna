@@ -114,5 +114,5 @@ The output will be different depending on the parameter passed to
 
 - `brick`
 
-![brick](https://github.com/geriom/beamercuerna/blob/master/img/default.png
+![brick](https://github.com/geriom/beamercuerna/blob/master/img/brick.png
 "Brick Colour Theme")
