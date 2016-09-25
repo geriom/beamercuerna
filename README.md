@@ -1,5 +1,5 @@
-BeamerCuerna
-============
+Beamer Theme Cuerna
+===================
 
 Beamer theme "Cuerna", version 1.1
 
@@ -30,18 +30,18 @@ distributions of LaTeX version 2008/05/04 or later.
 Installation:
 -------------
 The easiest way to install this package on TexLive (as far as I know this
-should work on MacTeX too) is to download **beamercuerna.tar.xz** 
+should work on MacTeX too) is to download **beamertheme-cuerna.tar.xz** 
 from this repository, open a terminal and run
 
 ```bash
-   sudo tlmgr install --file beamercuerna.tar.xz
+   sudo tlmgr install --file beamertheme-cuerna.tar.xz
 ```
 
 That will place the files in the right folders and make the theme available
 system-wide. 
 
 If you prefer to use your local *texfm* directory you can find the source *.sty
-files in `beamercuerna/tex/latex/beamercuerna/`.
+files in `beamertheme-cuerna/tex/latex/beamertheme-cuerna/`.
 
 Usage:
 ------
