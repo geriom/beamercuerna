@@ -1,6 +1,29 @@
+%%
+%% This is file `beamerinnerthemeCuerna.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% beamertheme-cuerna.dtx  (with options: `inner')
+%% 
+%% This is a generated fie
+%% 
+%% --------------------------------------------------------------------------------
+%% beamertheme-cuerna -- Beamer theme cuerna, version 1.1
+%% 
+%% Copyright (C) Geri Ochoa
+%% email: geri@bluesimplex.com
+%% 
+%% Released under the LaTeX Project Public Licence v1.3c or later
+%% github: https://github.com/geriom/beamertheme-cuerna
+%% my web site: bluesimplex.com
+%% --------------------------------------------------------------------------------
+%% 
+
+
+
 \mode<presentation>
 
-%This draws the background
 \setbeamertemplate{background}{
   \begin{tikzpicture}[espiral/.style={thick,color=edgescolor}]
     \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
@@ -23,8 +46,6 @@
     \draw[espiral] (0.71\paperwidth,0.24\paperheight) .. controls +(left:0.005\paperwidth) and (0.7\paperwidth, 0.26\paperheight) .. (0.7\paperwidth, 0.28\paperheight);
     \ifnum\thepage>1\relax%
     \fill[white, opacity=1] (0,0) rectangle(\the\paperwidth, \the\paperheight);
-%   \includegraphics[width=\paperwidth, height=0.8\paperheight,
-%   angle=35]{fondo.pdf}
     \fi
   \end{tikzpicture}
 }
@@ -33,7 +54,6 @@
 \setbeamerfont{title}{size=\huge, shape=\mdseries}
 \setbeamerfont{institute}{size=\tiny, shape=\itshape}
 
-%Creates the title page contents
 \defbeamertemplate*{title page}{Cuerna}[1][]
 {
   \begin{textblock}{9}(0.2,2.5)
@@ -50,7 +70,6 @@
     \usebeamerfont{institute}\insertinstitute
   \end{beamercolorbox}
 
-
   \begin{textblock}{6}(9.3,5)
     \begin{beamercolorbox}[right]{date}
       \usebeamerfont{date}\insertdate%
@@ -63,8 +82,13 @@
   \vfill
 }
 
-%Lists and the table of contents
 \setbeamertemplate{items}[triangle]
 \setbeamertemplate{sections/subsections in toc}[square]
 
 \mode<all>
+
+
+
+\endinput
+%%
+%% End of file `beamerinnerthemeCuerna.sty'.

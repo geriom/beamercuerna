@@ -1,12 +1,12 @@
-BeamerCuerna
-============
+Beamer Theme Cuerna
+===================
 
 Beamer theme "Cuerna", version 1.1
 
 Copyright (C) Geri Ochoa  (2016)
 
 e-mail: geri@bluesimplex.com
-github: https://github.com/geriom/beamercuerna/
+github: https://github.com/geriom/beamertheme-cuerna/
 web site: http://bluesimplex.com
 
 Dependencies:
@@ -26,10 +26,11 @@ http://www.latex-project.org/lppl.txt and version 1.3c or later is part of all
 distributions of LaTeX version 2008/05/04 or later.
 
 
-compile "beamercuerna.dtx" with pdflatex to generate the package documentation.
-compile "beamercuerna.ins" to generate the .sty files and the template. For 
-this package to be globally available you have to place the .sty file under 
-tex/latex/beamercuerna in your tex distribution directory.
+compile "beamertheme-cuerna.dtx" with pdflatex to generate the package
+documentation.  compile "beamertheme-cuerna.ins" to generate the .sty files and
+the template. For this package to be globally available you have to place the
+.sty file under tex/latex/beamertheme-cuerna in your tex distribution
+directory.
 
 This package has only been tested with texlive but it should work with other
 latex distributions.
