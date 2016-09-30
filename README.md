@@ -53,9 +53,9 @@ repository, open a terminal and run
 That will place the files in the right folders and make the theme available
 system-wide.
 
-**Note:** The aforementioned commands will only work if you have installed
-TeXLive from their official website. If you used your distribution package
-manager or any other source those commands might not work.
+**Note:** The aforementioned commands assume that you have installed TeXLive
+from their official website. If you used your distribution package manager or
+any other source those commands might not work.
 
 If you prefer to use your local texfm directory you can find the source `*.sty`
 files in `beamertheme-cuerna/tex/latex/beamertheme-cuerna/`
