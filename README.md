@@ -34,20 +34,20 @@ install it on TexLive (as far as I know this should work on MacTeX too) is to
 update the list of available packages running this command:
 
 ```bash
-	sudo tlmgr update --list 
+   sudo tlmgr update --list 
 ```
 
 and install `beamertheme-cuerna` with the following command:
 
 ```bash
-  sudo tlmgr install beamertheme-cuerna
+   sudo tlmgr install beamertheme-cuerna
 ```
 
 Another method is to download the file **beamertheme-cuerna.tar.xz** from this
 repository, open a terminal and run
 
 ```bash
-	sudo tlmgr install --file beamertheme-cuerna.tar.xz 
+   sudo tlmgr install --file beamertheme-cuerna.tar.xz 
 ```
 
 That will place the files in the right folders and make the theme available
