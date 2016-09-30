@@ -29,19 +29,38 @@ distributions of LaTeX version 2008/05/04 or later.
 
 Installation:
 -------------
-The easiest way to install this package on TexLive (as far as I know this
-should work on MacTeX too) is to download **beamertheme-cuerna.tar.xz** 
-from this repository, open a terminal and run
+The package is available on the **CTAN** repositories, so the easiest way to
+install it on TexLive (as far as I know this should work on MacTeX too) is to
+update the list of available packages running this command:
 
 ```bash
-   sudo tlmgr install --file beamertheme-cuerna.tar.xz
+	sudo tlmgr update --list 
+```
+
+and install `beamertheme-cuerna` with the following command:
+
+```bash
+  sudo tlmgr install beamertheme-cuerna
+```
+
+Another method is to download the file **beamertheme-cuerna.tar.xz** from this
+repository, open a terminal and run
+
+```bash
+	sudo tlmgr install --file beamertheme-cuerna.tar.xz 
 ```
 
 That will place the files in the right folders and make the theme available
-system-wide. 
+system-wide.
 
-If you prefer to use your local *texfm* directory you can find the source *.sty
-files in `beamertheme-cuerna/tex/latex/beamertheme-cuerna/`.
+**Note:** The aforementioned commands will only work if you have installed
+TeXLive from their official website. If you used your distribution package
+manager or any other source those commands might not work.
+
+If you prefer to use your local texfm directory you can find the source `*.sty`
+files in `beamertheme-cuerna/tex/latex/beamertheme-cuerna/`
+
+
 
 Usage:
 ------
